@@ -1,0 +1,123 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #faffef;
+    color: #392b50;
+    padding: 30px 15px;
+}
+
+.container {
+    max-width: 500px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    color: #88799d;
+    margin-bottom: 25px;
+}
+
+.progress-card,
+.task-card {
+    background: white;
+    padding: 25px;
+    border-radius: 18px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 20px #d9c9ed66;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.progress-card p {
+    color: #88799d;
+    font-size: 14px;
+}
+
+.progress {
+    background: #eee5fa;
+    height: 10px;
+    border-radius: 10px;
+    margin: 18px 0 10px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    background: #ddf589;
+    height: 100%;
+    width: 60%;
+    border-radius: 10px;
+}
+
+.small {
+    text-align: right;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 15px 0;
+    border-bottom: 1px solid #f0eafa;
+}
+
+.task:last-child {
+    border-bottom: none;
+}
+
+.task input {
+    accent-color: #a77bdb;
+    width: 17px;
+    height: 17px;
+    cursor: pointer;
+}
+
+.task label {
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.task input:checked + label {
+    text-decoration: line-through;
+    color: #aa9bbd;
+}
+
+.progress-card,
+.task-card {
+    transition: transform 0.3s ease;
+}
+
+.progress-card:hover,
+.task-card:hover {
+    transform: translateY(-4px);
+}
+
+.footer {
+    text-align: center;
+    color: #88799d;
+    font-size: 13px;
+    margin-top: 25px;
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    .progress-card,
+    .task-card {
+        padding: 20px;
+    }
+}
